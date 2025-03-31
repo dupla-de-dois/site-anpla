@@ -3,8 +3,7 @@
   
     function toggleScrolled() {
       const selectBody = document.querySelector("body");
-    //   const selectHeader = document.querySelector("#header");
-  
+
       window.scrollY > 100
         ? selectBody.classList.add("scrolled")
         : selectBody.classList.remove("scrolled");

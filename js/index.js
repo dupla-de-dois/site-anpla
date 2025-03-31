@@ -189,7 +189,6 @@ function initSwiper() {
   
   let totalImgs = 28;
   const imgWidth = 120 + 10;
-  // partnersContainer.style.width = `${totalImgs * imgWidth}px`;
   partnersSection.appendChild(partnersContainer);
   
   for (let j = 0; j < 2; j++) {
@@ -292,7 +291,7 @@ function initSwiper() {
                     <div class="member-info">
                       <h4>${m.name}</h4>
                       <hr />
-                      <span>${m.role}</span>
+                      <span class="mb-2">${m.role}</span>
                       <p>
                         ${m.text}
                       </p>

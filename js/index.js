@@ -108,7 +108,7 @@ function initSwiper() {
       iconName: "bi-mortarboard",
       color: "#4233ff",
       title: "SEGURO UNIVERSITÁRIO",
-      span: `Cote <a href="/details.html" class="pe-auto">aqui</a>`,
+      span: `Cote <a href="details.html" class="pe-auto">aqui</a>`,
       spanClass: "univ",
     },
     {

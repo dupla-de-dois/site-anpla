@@ -19,7 +19,7 @@ function initSwiper() {
       delay: "200",
       iconName: "bi-hourglass-split",
       title: "Experiência que inspira",
-      text: "Com 15 anos no mercado, nossa fundadora lidera uma equipe especializada e comprometida em cada detalhe.",
+      text: "Mais de 20 anos no mercado, nossa fundadora lidera uma equipe especializada e comprometida em cada detalhe.",
     },
     {
       delay: "300",
@@ -187,7 +187,7 @@ function initSwiper() {
   const partnersContainer = document.createElement("div");
   partnersContainer.classList.add("partners-items", "d-flex", "align-items-center");
   
-  let totalImgs = 28;
+  let totalImgs = 33;
   const imgWidth = 120 + 10;
   partnersSection.appendChild(partnersContainer);
   

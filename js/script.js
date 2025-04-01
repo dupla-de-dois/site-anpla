@@ -10,6 +10,16 @@
       .catch((error) => console.error("Erro ao carregar o footer:", error));
   });
 
+
+  document.addEventListener("DOMContentLoaded", function () {
+    fetch("contact.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.querySelector("#contact").innerHTML = data;
+      })
+      .catch((error) => console.error("Erro ao carregar o contact:", error));
+  });
+
   function toggleScrolled() {
     const selectBody = document.querySelector("body");
 

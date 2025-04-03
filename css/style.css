@@ -516,6 +516,8 @@ section,
 }
 
 .services .services-item {
+  min-height: 70px !important;
+  max-height: 70px !important;
   background-color: var(--surface-color);
   display: flex;
   align-items: center;

@@ -107,7 +107,7 @@ function initSwiper() {
       delay: "800",
       iconName: "bi-mortarboard",
       color: "#4233ff",
-      title: "SEGURO UNIVERSITÁRIO",
+      title: "SEGURO ESTAGIÁRIO",
       span: `Cote <a href="details.html" class="pe-auto">aqui</a>`,
       spanClass: "univ",
     },
@@ -257,6 +257,74 @@ function initSwiper() {
     swiperWrapper.appendChild(swiperSlide);
   });
   
+  const clients = [
+    {
+      delay: "100",
+      logo: "cliente1.png",
+      name: "Logo empresa Teciplast",
+      bgColor: "#ffffff"
+    },
+    {
+      delay: "200",
+      logo: "cliente2.png",
+      name: "Logo empresa Pereira da Silva Advocacia",
+      bgColor: "#19375d"
+    },
+    {
+      delay: "300",
+      logo: "cliente3.png",
+      name: "Logo empresa Oxygen Investimentos",
+      bgColor: "#ffffff"
+    },
+    {
+      delay: "400",
+      logo: "cliente4.png",
+      name: "Logo empresa Move Turismo",
+      bgColor: "#efeefd"
+    },
+    {
+      delay: "500",
+      logo: "cliente5.png",
+      name: "Logo empresa Color Print Gráfica",
+      bgColor: "#2e549d"
+    },
+    {
+      delay: "600",
+      logo: "cliente6.png",
+      name: "Logo empresa Cheirin Bão TopShopping",
+      bgColor: "#744c27"
+    },
+    {
+      delay: "700",
+      logo: "cliente7.png",
+      name: "Logo empresa Lilian Santos Ferreira Advocacia",
+      bgColor: "#64100e"
+    },
+    {
+      delay: "800",
+      logo: "cliente8.png",
+      name: "Logo empresa KKSports Ensino Desportivo",
+      bgColor: "#060709"
+    }
+  ];
+
+  const clientsContainer = document.querySelector(".clients-container");
+
+  clients.forEach((client) => {
+    const clientBox = document.createElement("div");
+    clientBox.classList.add("col-xl-3", "col-lg-4", "col-md-6", "col-sm-6", "col-6");
+    clientBox.setAttribute("data-aos", "fade-up");
+    clientBox.setAttribute("data-aos-delay", client.delay);
+  
+    clientBox.innerHTML = `
+      <div class="client-logo-box h-100" style="background-color: ${client.bgColor}">
+        <img src="assets/imgs/clients/${client.logo}" alt="${client.name}" class="client-logo-img">
+      </div>
+    `;
+  
+    clientsContainer.appendChild(clientBox);
+  });
+
   const members = [
     {
       img: "ana",

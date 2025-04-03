@@ -108,7 +108,7 @@ function initSwiper() {
       iconName: "bi-mortarboard",
       color: "#4233ff",
       title: "SEGURO ESTAGIÁRIO",
-      span: `Cote <a href="details.html" class="pe-auto">aqui</a>`,
+      span: `Cote <a href="seguro-estagiario.html" class="pe-auto">aqui</a>`,
       spanClass: "univ",
     },
     {
@@ -184,21 +184,58 @@ function initSwiper() {
   });
   
   const partnersSection = document.querySelector(".partners");
-  const partnersContainer = document.createElement("div");
-  partnersContainer.classList.add("partners-items", "d-flex", "align-items-center");
-  
-  let totalImgs = 33;
-  const imgWidth = 120 + 10;
-  partnersSection.appendChild(partnersContainer);
-  
-  for (let j = 0; j < 2; j++) {
-    for (let i = 1; i <= totalImgs; i++) {
-      const partnersItem = document.createElement("img");
-      partnersItem.classList.add("partners-item");
-      partnersItem.setAttribute("src",`assets/imgs/partners/${i}.png`)
-      partnersContainer.appendChild(partnersItem);
-    }
+const partnersContainer = document.createElement("div");
+partnersContainer.classList.add("partners-items", "d-flex", "align-items-center");
+
+let totalImgs = 33;
+const imgWidth = 120 + 10;
+partnersSection.appendChild(partnersContainer);
+
+const altPartners = [
+  "Akad Seguros - Soluções inovadoras em tecnologia para seguros digitais com processos 100% online",
+  "Allianz Seguros - Líder global em proteção veicular, residencial e seguro de vida com 130 anos de experiência",
+  "Amil Saúde - Planos de saúde com ampla rede credenciada e cobertura nacional para indivíduos e empresas",
+  "Axa Seguros - Seguros para automóveis, vida, empresarial e riscos especiais com soluções personalizadas",
+  "Azos Seguros - Seguro de vida 100% digital com coberturas flexíveis e preços acessíveis para todos os perfis",
+  "Azul Seguros - Seguro auto com franquias reduzidas e assistência 24h para todos os tipos de veículos",
+  "BrasilPrev - Planos de previdência privada VGBL e PGBL com diversas opções de contribuição e resgate",
+  "Capemisa Seguros - Especialista em seguros de vida em grupo e individual com mais de 75 anos no mercado",
+  "Centauro Seguradora - Seguro de vida simples e objetivo com cobertura por morte natural e acidental",
+  "Fator Seguradora - Seguros patrimoniais, garantias, responsabilidade civil e riscos empresariais especializados",
+  "HDI Seguros - Seguros para automóveis, residências, condomínios e empresas com ampla cobertura",
+  "Icatu Seguros - Soluções em capitalização, previdência e seguros de vida com rendimentos competitivos",
+  "Itaú Seguros - Seguro auto com desconto para correntistas do banco, assistência 24h e cobertura nacional",
+  "Leve Saúde - Planos de saúde econômicos com rede referenciada e atendimento em todo território nacional",
+  "MAG Seguros - Seguro de vida tradicional com estabilidade de mais de 185 anos no mercado segurador",
+  "Mapfre Seguros - Multinacional espanhola com seguros automóveis, vida, saúde, residência, empresas e riscos especiais",
+  "MetLife Seguros - Seguros de vida individuais e em grupo com diversas coberturas",
+  "NotreDame Intermédica - Rede de planos de saúde com hospitais próprios e atendimento odontológico integrado",
+  "Omint Saúde - Planos de saúde premium com acesso a melhores hospitais e clínicas do país",
+  "Porto Seguro - Seguradora completa para automóveis, celulares, vida, residência, viagem e consórcios diversos",
+  "Pottencial Seguros - Seguros garantia, fiança locatícia, riscos imobiliários e garantias judiciais",
+  "Prevent Senior - Planos de saúde para idosos com cobertura nacional e foco na terceira idade",
+  "Prudential Seguros - Seguro de vida e em grupo com proteção financeira em casos de imprevistos",
+  "Rodobens Consórcios - Consórcios para veículos, imóveis e serviços com parcelas fixas e sem juros",
+  "Sompo Seguros - Seguradora japonesa com produtos para automóveis, vida e riscos empresariais",
+  "Suhai Seguros - Seguros para proteção veicular especializada contra roubo e furto com rastreador incluso",
+  "SulAmérica Seguros - Seguros de saúde, dental e previdência privada com diversas opções de planos",
+  "Sura Seguros - Soluções completas para empresas com seguros coletivos e benefícios para funcionários",
+  "Tokio Marine Seguros - Seguradora japonesa com produtos para automóveis, vida e viagens internacionais",
+  "Unimed Saúde - Maior operadora de planos de saúde do Brasil com mais de 150 mil médicos credenciados",
+  "Seguros Unimed - Seguros de vida, previdência privada, acidentes pessoais e responsabilidade profissional",
+  "Yelum Seguros - Seguros de vida, automóveis e residência com contratação",
+  "Zurich Seguros - Seguros empresariais, riscos especiais e proteções financeiras personalizadas"
+];
+
+for (let j = 0; j < 2; j++) {
+  for (let i = 1; i <= totalImgs; i++) {
+    const partnersItem = document.createElement("img");
+    partnersItem.classList.add("partners-item");
+    partnersItem.setAttribute("src", `assets/imgs/partners/${i}.png`);
+    partnersItem.setAttribute("alt", altPartners[i - 1] || `Logo da empresa ${i}`);
+    partnersContainer.appendChild(partnersItem);
   }
+}
   
   const reviews = [
     {
@@ -261,49 +298,49 @@ function initSwiper() {
     {
       delay: "100",
       logo: "cliente1.png",
-      name: "Logo empresa Teciplast",
+      name: "Logotipo azul da Teciplast, loja especializada em tecidos de alta qualidade ",
       bgColor: "#ffffff"
     },
     {
       delay: "200",
       logo: "cliente2.png",
-      name: "Logo empresa Pereira da Silva Advocacia",
+      name: "Logotipo dourado e azul da Pereira da Silva Advocacia, escritório de advocacia dos mais diversos ramos",
       bgColor: "#19375d"
     },
     {
       delay: "300",
       logo: "cliente3.png",
-      name: "Logo empresa Oxygen Investimentos",
+      name: "Logotipo preta e cinza da Oxygen Investimentos especialista em crédito",
       bgColor: "#ffffff"
     },
     {
       delay: "400",
       logo: "cliente4.png",
-      name: "Logo empresa Move Turismo",
+      name: "Logotipo azul da Move Turismo, agência de viagens especializada em roteiros personalizados",
       bgColor: "#efeefd"
     },
     {
       delay: "500",
       logo: "cliente5.png",
-      name: "Logo empresa Color Print Gráfica",
+      name: "Logotipo colorido e azul da Gráfica Color Print, especializada em impressões e materiais gráficos",
       bgColor: "#2e549d"
     },
     {
       delay: "600",
       logo: "cliente6.png",
-      name: "Logo empresa Cheirin Bão TopShopping",
+      name: "Logotipo da cafeteria Cheirin Bão TopShopping, conhecida por seu excelente café e ambiente aconchegante",
       bgColor: "#744c27"
     },
     {
       delay: "700",
       logo: "cliente7.png",
-      name: "Logo empresa Lilian Santos Ferreira Advocacia",
+      name: "Logotipo na cor fúcsia do escritório de advocacia Lilian Santos Ferreira, assistência jurídica",
       bgColor: "#64100e"
     },
     {
       delay: "800",
       logo: "cliente8.png",
-      name: "Logo empresa KKSports Ensino Desportivo",
+      name: "Logotipo preto e branco da KKSports Ensino Desportivo, com uma bola de futebol em chamas, representando sua atuação no treinamento esportivo",
       bgColor: "#060709"
     }
   ];
@@ -330,12 +367,14 @@ function initSwiper() {
       img: "ana",
       name: "Ana Paula Antunes",
       role: "Fundadora",
+      alt: "Foto de Ana Paula Antunes, fundadora da corretora de seguros, especializada em soluções personalizadas.",
       text: "Com quase duas décadas de atuação no mercado de seguros, a expertise e o compromisso de Ana garantem que os clientes sempre recebam as melhores opções e soluções para suas demandas.",
     },
     {
       img: "yuri",
       name: "Yuri Ribeiro",
       role: "Sócio",
+      alt: "Foto de Yuri Ribeiro, Sócio da Corretora e especialista em inovação.",
       text: "O jovem e determinado Yuri agrega com sua agilidade para inovar e otimizar processos. Formado em Sistemas de Informação, ele é responsável por integrar tecnologias e garantir eficiência nos serviços.",
     },
   ];
@@ -354,7 +393,7 @@ function initSwiper() {
                         src="assets/imgs/bg/logotipo.png"
                         alt=""
                       />
-                      <img src="assets/imgs/members/${m.img}-alt.png" class="main-img" alt="${m.img}" />
+                      <img src="assets/imgs/members/${m.img}-alt.png" class="main-img" alt="${m.alt}" />
                     </div>
                     <div class="member-info">
                       <h4>${m.name}</h4>

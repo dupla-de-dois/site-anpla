@@ -375,7 +375,7 @@ for (let j = 0; j < 2; j++) {
       name: "Yuri Ribeiro",
       role: "Sócio",
       alt: "Foto de Yuri Ribeiro, Sócio da Corretora e especialista em inovação.",
-      text: "O jovem e determinado Yuri agrega com sua agilidade para inovar e otimizar processos. Formado em Sistemas de Informação, ele é responsável por integrar tecnologias e garantir eficiência nos serviços.",
+      text: "Formado em Sistemas de Informação, atua integrando tecnologias, transformando rotinas, inovando processos e otimizando fluxos para garantir eficiência e qualidade organizacional.",
     },
   ];
   

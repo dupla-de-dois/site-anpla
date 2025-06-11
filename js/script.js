@@ -266,6 +266,7 @@
                   <h3>Plano ${price.number}</h3>
                   <h4><sup>R$</sup>${price.capital}<span>,00</span></h4>
                   <ul>
+                    <li><small>Cobertura para Morte Acidental e Invalidez Permanente Total ou Parcial por Acidente</small></li>
                     <li>Quantidade de números da sorte: ${price.number}</li>
                     <li>
                       Valor total do seguro:
@@ -321,7 +322,20 @@
     {
       number: "6",
       question: "Como acionar o seguro em caso de sinistro?",
-      answer: "Contatar a seguradora, apresentar TCE e documentos do acidente.",
+      answer:
+        "Contatar a seguradora para fazer o aviso de sinistro e solicitar a indenização entrando em contato com os telefones da seguradora, indicados na apólice.",
+    },
+    {
+      number: "7",
+      question: "Quem são os beneficiários da apólice?",
+      answer:
+        "São os beneficiários legais, de acordo com a lei, no caso de morte acidental. No caso de invalidez por acidente, o próprio segurado da apólice.",
+    },
+    {
+      number: "8",
+      question: "Boleto vencido, ainda posso pagar?",
+      answer:
+        "Caso o boleto tenha vencido e o pagamento não tenha sido feito, é preciso realizar uma nova contratação. O boleto vencido e não pago é automaticamente cancelado.",
     },
   ];
 

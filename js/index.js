@@ -187,7 +187,7 @@ function initSwiper() {
 const partnersContainer = document.createElement("div");
 partnersContainer.classList.add("partners-items", "d-flex", "align-items-center");
 
-let totalImgs = 33;
+let totalImgs = 32;
 const imgWidth = 120 + 10;
 partnersSection.appendChild(partnersContainer);
 

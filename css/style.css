@@ -28,6 +28,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 body {
@@ -272,7 +273,7 @@ section,
   align-items: center;
 }
 
-.hero .hero-bg {
+.hero-index .hero-bg {
   position: absolute;
   inset: 0;
   display: block;
@@ -282,7 +283,7 @@ section,
   z-index: 1;
 }
 
-.hero:before {
+.hero-index:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 10%);
   position: absolute;

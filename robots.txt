@@ -1,0 +1,11 @@
+# Bloqueio de acesso de robôs a áreas administrativas/privadas
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+
+# Permitir acesso ao restante do site
+Allow: /
+
+# Sitemap para ajudar os robôs a indexar o site
+Sitemap: https://anplacorretora.com/sitemap.xml
